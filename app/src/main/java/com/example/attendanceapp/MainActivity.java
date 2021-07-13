@@ -6,6 +6,8 @@ import android.content.Intent ;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -32,6 +34,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
 //        Toast.makeText(this, "Hellllo this is on create ", Toast.LENGTH_SHORT).show();
         super.onCreate(savedInstanceState);
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        getSupportActionBar();
         setContentView(R.layout.activity_main);
         bt=findViewById(R.id.button);
         bt2=findViewById(R.id.button2);
