@@ -5,11 +5,11 @@ import android.widget.Toast;
 import com.example.attendanceapp.MainActivity;
 
 public class Users {
-    String username;
+    String roll;
     String email;
 
-    public Users(String username, String email, String password) {
-        this.username = username;
+    public Users(String roll, String email, String password) {
+        this.roll = roll;
         this.email = email;
         this.password = password;
 
@@ -17,11 +17,11 @@ public class Users {
     public Users(){}
 
     public String getUsername() {
-        return username;
+        return roll;
     }
 
-    public void setUsername(String username) {
-        this.username = username;
+    public void setroll(String roll) {
+        this.roll = roll;
     }
 
     public String getEmail() {
