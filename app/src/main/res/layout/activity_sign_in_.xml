@@ -45,12 +45,12 @@
             android:layout_marginLeft="38dp"
             android:layout_marginTop="30dp"
             android:background="@drawable/white_radius"
-            android:ems="10"
             android:drawableLeft="@drawable/ic_email_logo"
-            android:padding="10dp"
+            android:ems="10"
             android:hint="             Email"
             android:inputType="textEmailAddress"
-            />
+            android:padding="10dp"
+            android:textColor="@color/black" />
 
         <EditText
             android:id="@+id/editTextNumberPasswordSignIn"
@@ -58,12 +58,13 @@
             android:layout_height="61dp"
             android:layout_marginLeft="38dp"
             android:layout_marginTop="20dp"
-            android:ems="10"
-            android:padding="10dp"
-            android:drawableLeft="@drawable/ic_pass_logo"
-            android:hint="         Password"
             android:background="@drawable/white_radius"
-            android:inputType="numberPassword" />
+            android:drawableLeft="@drawable/ic_pass_logo"
+            android:ems="10"
+            android:hint="         Password"
+            android:inputType="numberPassword"
+            android:padding="10dp"
+            android:textColor="@color/black" />
 
 
 
