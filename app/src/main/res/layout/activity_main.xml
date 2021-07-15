@@ -37,11 +37,11 @@
 
     <EditText
         android:id="@+id/editTextTextPersonName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="@color/orange"
+        android:layout_width="234dp"
+        android:layout_height="50dp"
+        android:background="@drawable/white_radius"
+        android:hint="                Username"
         android:ems="10"
-        android:hint="Username"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/editTextTextEmailAddress"
         app:layout_constraintEnd_toEndOf="parent"
@@ -50,12 +50,12 @@
 
     <EditText
         android:id="@+id/editTextNumberPassword"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:layout_marginTop="152dp"
-        android:backgroundTint="@color/orange"
         android:ems="10"
-        android:hint="Password"
+        android:layout_width="234dp"
+        android:layout_height="50dp"
+        android:background="@drawable/white_radius"
+        android:hint="                Password"
         android:inputType="numberPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -63,12 +63,12 @@
 
     <EditText
         android:id="@+id/editTextTextEmailAddress"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
-        android:backgroundTint="@color/orange"
         android:ems="10"
-        android:hint="Email"
+        android:hint="                    Email"
+        android:layout_width="234dp"
+        android:layout_height="50dp"
+        android:background="@drawable/white_radius"
         android:inputType="textEmailAddress"
         app:layout_constraintBottom_toTopOf="@+id/editTextNumberPassword"
         app:layout_constraintEnd_toEndOf="parent"
@@ -80,13 +80,14 @@
         android:layout_height="51dp"
         android:layout_marginBottom="36dp"
         android:background="@drawable/radius_button"
+        android:elevation="50dp"
         android:text="Sign Up"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.581" />
+        app:layout_constraintVertical_bias="0.59" />
 
     <Button
         android:id="@+id/button2"
@@ -94,6 +95,7 @@
         android:layout_height="wrap_content"
         android:background="@drawable/radius_button"
         android:text="Sign In?"
+        android:elevation="35dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"

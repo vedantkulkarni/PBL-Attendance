@@ -44,9 +44,9 @@
             android:layout_height="66dp"
             android:layout_marginLeft="38dp"
             android:layout_marginTop="30dp"
-            android:backgroundTint="@color/orange"
+            android:background="@drawable/white_radius"
             android:ems="10"
-            android:hint="Email"
+            android:hint="                    Email"
             android:inputType="textEmailAddress" />
 
         <EditText
@@ -55,9 +55,9 @@
             android:layout_height="61dp"
             android:layout_marginLeft="38dp"
             android:layout_marginTop="20dp"
-            android:backgroundTint="@color/orange"
             android:ems="10"
-            android:hint="Password"
+            android:hint="                Password"
+            android:background="@drawable/white_radius"
             android:inputType="numberPassword" />
 
         <Button
