@@ -44,7 +44,7 @@ public class Home extends AppCompatActivity {
                             Log.d("firebase", String.valueOf(task.getResult().getValue()));
 //                            userattendance.setText(String.valueOf(task.getResult().getValue()));
                               String rollNumber = String.valueOf(task.getResult().getValue());
-                              aDatabase.getReference().child("FE8").child("Engineering Physics").child(rollNumber).child("Per(%)").get().addOnCompleteListener(new OnCompleteListener<DataSnapshot>() {
+                              aDatabase.getReference().child("FE8").child("ENGINEERING MATHEMATICS II").child(rollNumber).child("Per(%)").get().addOnCompleteListener(new OnCompleteListener<DataSnapshot>() {
                                   @Override
                                   public void onComplete(@NonNull Task<DataSnapshot> task) {
                                       if (!task.isSuccessful()) {
