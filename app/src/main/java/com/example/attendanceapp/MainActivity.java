@@ -34,7 +34,7 @@ public class MainActivity<_button> extends AppCompatActivity {
     //private FirebaseDatabase ref;
     private Button bt;
     private Button bt2;
-    private EditText username;
+    private EditText roll;
     private EditText email;
     private EditText password;
     private FirebaseAuth mAuth;
@@ -48,7 +48,7 @@ public class MainActivity<_button> extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         bt=findViewById(R.id.button);
         bt2=findViewById(R.id.button2);
-        username=findViewById(R.id.editTextTextPersonName);
+        roll=findViewById(R.id.editTextTextPersonName);
         email=findViewById(R.id.editTextTextEmailAddress);
         password=findViewById(R.id.editTextNumberPassword);
         mAuth = FirebaseAuth.getInstance();
@@ -61,7 +61,7 @@ public class MainActivity<_button> extends AppCompatActivity {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if(task.isSuccessful()){
                             Toast.makeText(MainActivity.this, "Sign Up Successful", Toast.LENGTH_SHORT).show();
-                            Users user = new Users(username.getText().toString() , email.getText().toString() ,password.getText().toString());
+                            Users user = new Users(roll.getText().toString() , email.getText().toString() ,password.getText().toString());
                             mDatabase=FirebaseDatabase.getInstance( "https://attendanceapp-7ed22-default-rtdb.asia-southeast1.firebasedatabase.app/");
                             String id= task.getResult().getUser().getUid();
 

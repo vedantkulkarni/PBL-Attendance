@@ -42,8 +42,21 @@ public class Home extends AppCompatActivity {
                         }
                         else {
                             Log.d("firebase", String.valueOf(task.getResult().getValue()));
-                            userattendance.setText(String.valueOf(task.getResult().getValue()));
-
+//                            userattendance.setText(String.valueOf(task.getResult().getValue()));
+                              String rollNumber = String.valueOf(task.getResult().getValue());
+                              aDatabase.getReference().child("FE8").child("Engineering Physics").child(rollNumber).child("Per(%)").get().addOnCompleteListener(new OnCompleteListener<DataSnapshot>() {
+                                  @Override
+                                  public void onComplete(@NonNull Task<DataSnapshot> task) {
+                                      if (!task.isSuccessful()) {
+                                          Log.e("firebase", "Error getting data", task.getException());
+                                          Toast.makeText(Home.this , "failed to get value " , Toast.LENGTH_SHORT).show();
+                                      }
+                                      else {
+                                          Log.d("firebase", String.valueOf(task.getResult().getValue()));
+                                          userattendance.setText(String.valueOf(task.getResult().getValue()));
+                                      }
+                                  }
+                              });
                         }
                     }
                 });
