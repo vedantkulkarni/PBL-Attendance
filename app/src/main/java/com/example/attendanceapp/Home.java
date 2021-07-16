@@ -33,7 +33,7 @@ public class Home extends AppCompatActivity {
         setContentView(R.layout.activity_home);
         userattendance=findViewById(R.id.attendance);
         attendanceBt=findViewById(R.id.button3);
-        getSupportFragmentManager().beginTransaction().replace(R.id.framecontainer,new HomeFragment()).commit();
+        getSupportFragmentManager().beginTransaction().replace(R.id.framecontainer,new Fragment()).commit();
         bnv=(BottomNavigationView)findViewById(R.id.bottomNavigation);
         bnv.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
@@ -42,7 +42,7 @@ public class Home extends AppCompatActivity {
                 Fragment temp=null;
                 switch (item.getItemId())
                 {
-                    case R.id.homeid: temp= new HomeFragment();
+                    case R.id.homeid: temp= new Fragment();
                         break;
                     case R.id.profileid: temp= new profileFragment();
                         break;
