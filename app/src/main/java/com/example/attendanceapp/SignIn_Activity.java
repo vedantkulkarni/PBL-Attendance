@@ -45,7 +45,7 @@ public class SignIn_Activity extends AppCompatActivity {
                         if(task.isSuccessful())
                         {
                             Toast.makeText(SignIn_Activity.this, "SignIn Successful", Toast.LENGTH_SHORT).show();
-                            Intent intent = new Intent(SignIn_Activity.this , Home.class);
+                            Intent intent = new Intent(SignIn_Activity.this ,Home1Fragment.class);
                             startActivity(intent);
                         }
                         else
