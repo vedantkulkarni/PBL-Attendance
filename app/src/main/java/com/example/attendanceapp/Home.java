@@ -64,7 +64,7 @@ public class Home extends AppCompatActivity {
         textView29=findViewById(R.id.textView29);
         textView30=findViewById(R.id.textView30);
         attendanceBt=findViewById(R.id.button3);
-        getSupportFragmentManager().beginTransaction().replace(R.id.framecontainer,new Fragment()).commit();
+        getSupportFragmentManager().beginTransaction().replace(R.id.framecontainer1,new Home1Fragment()).commit();
         bnv=(BottomNavigationView)findViewById(R.id.bottomNavigation);
         bnv.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
@@ -73,13 +73,13 @@ public class Home extends AppCompatActivity {
                 Fragment temp=null;
                 switch (item.getItemId())
                 {
-                    case R.id.homeid: temp= new Fragment();
+                    case R.id.homeid: temp= new Home1Fragment();
                         break;
                     case R.id.profileid: temp= new profileFragment();
                         break;
                     case R.id.aboutid: temp= new aboutFragment();
                 }
-                getSupportFragmentManager().beginTransaction().replace(R.id.framecontainer,temp).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.id.framecontainer1,temp).commit();
                 return true;
             }
         });
