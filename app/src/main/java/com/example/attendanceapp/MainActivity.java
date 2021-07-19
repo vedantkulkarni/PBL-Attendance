@@ -2,9 +2,12 @@ package com.example.attendanceapp;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+
 import android.content.Intent ;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.Window;
@@ -18,13 +21,18 @@ import android.widget.Toast;
 import com.example.attendanceapp.Models.Users;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
+import com.google.android.material.bottomnavigation.BottomNavigationItemView;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
-public class MainActivity<_button> extends AppCompatActivity {
+public class MainActivity<_button> extends AppCompatActivity
+{
+//    private BottomNavigationView bnv;
+
 
     Button signup_button, signin_button, signinQ_button;
     Animation scaleup, scaledown;
@@ -43,6 +51,27 @@ public class MainActivity<_button> extends AppCompatActivity {
 //        Toast.makeText(this, "Hellllo this is on create ", Toast.LENGTH_SHORT).show();
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
+
+//        getSupportFragmentManager().beginTransaction().replace(R.id.framecontainer,new HomeFragment()).commit();
+//        bnv=(BottomNavigationView)findViewById(R.id.bottomNavigation);
+//        bnv.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+//            @Override
+//            public boolean onNavigationItemSelected(@NonNull MenuItem item)
+//            {
+//                Fragment temp=null;
+//                switch (item.getItemId())
+//                {
+//                    case R.id.homeid: temp= new HomeFragment();
+//                    break;
+//                    case R.id.profileid: temp= new profileFragment();
+//                    break;
+//                    case R.id.aboutid: temp= new aboutFragment();
+//                }
+//                getSupportFragmentManager().beginTransaction().replace(R.id.framecontainer,temp).commit();
+//                return true;
+//            }
+//        });
+
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         getSupportActionBar();
         setContentView(R.layout.activity_main);

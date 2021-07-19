@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".aboutFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="149dp"
+        android:layout_height="151dp"
+        android:fadingEdge="horizontal|vertical|none"
+        android:src="@drawable/logo1"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.077" />
+
+    <TextView
+        android:id="@+id/textView32"
+        android:layout_width="320dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="PICT Attendance App"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:layout_constraintVertical_bias="0.071" />
+
+    <TextView
+        android:id="@+id/textView34"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Versio 1.0"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView32"
+        app:layout_constraintVertical_bias="0.963" />
+
+    <TextView
+        android:id="@+id/textView35"
+        android:layout_width="364dp"
+        android:layout_height="39dp"
+        android:text="We are sorry in advance for any kind of unexpected bugs."
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView34"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView32"
+        app:layout_constraintVertical_bias="0.16" />
+
+    <TextView
+        android:id="@+id/textView36"
+        android:layout_width="371dp"
+        android:layout_height="68dp"
+        android:text="We will be introducing new exciting features such as lecture timetable, study planner, sppu notifications etc. Till then please stay tuned."
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView34"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView35"
+        app:layout_constraintVertical_bias="0.063" />
+
+    <!--Action name text for the add alarm button-->
+    <!--Make sure that you are constraining this Text to
+        the add Alarm FAB button-->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:src="@android:drawable/stat_sys_phone_call"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.935"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView36"
+        app:layout_constraintVertical_bias="0.609" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/dev_info_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        app:backgroundTint="#DD0F0F"
+        app:fabSize="normal"
+        app:layout_constraintBottom_toTopOf="@+id/floatingActionButton2"
+        app:layout_constraintEnd_toEndOf="@+id/floatingActionButton2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/floatingActionButton2"
+        app:srcCompat="@drawable/coding" />
+
+    <TextView
+        android:id="@+id/dev_info_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="Developer Info"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/dev_info_fab"
+        app:layout_constraintEnd_toStartOf="@+id/dev_info_fab"
+        app:layout_constraintTop_toTopOf="@+id/dev_info_fab" />
+
+    <!--Action name text for the add person button-->
+    <!--Make sure that you are constraining this Text
+        to the add Person FAB button-->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/teacher_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        app:backgroundTint="#00BCD4"
+        app:fabSize="normal"
+        app:layout_constraintBottom_toTopOf="@+id/dev_info_fab"
+        app:layout_constraintEnd_toEndOf="@+id/dev_info_fab"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/dev_info_fab"
+        app:srcCompat="@drawable/teacher" />
+
+    <TextView
+        android:id="@+id/teacher_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="Teacher info"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/teacher_fab"
+        app:layout_constraintEnd_toStartOf="@+id/teacher_fab"
+        app:layout_constraintTop_toTopOf="@+id/teacher_fab" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+<!--</androidx.constraintlayout.widget.ConstraintLayout>-->
