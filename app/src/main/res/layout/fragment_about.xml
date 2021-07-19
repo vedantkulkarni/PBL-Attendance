@@ -5,6 +5,7 @@
     android:id="@+id/frameLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+
     tools:context=".aboutFragment">
 
     <!-- TODO: Update blank fragment layout -->
@@ -53,8 +54,10 @@
 
     <TextView
         android:id="@+id/textView35"
-        android:layout_width="364dp"
+        android:layout_width="350dp"
         android:layout_height="39dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="20dp"
         android:text="We are sorry in advance for any kind of unexpected bugs."
         android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/textView34"
@@ -64,22 +67,25 @@
         app:layout_constraintTop_toBottomOf="@+id/textView32"
         app:layout_constraintVertical_bias="0.16" />
 
+    <!--Action name text for the add alarm button-->
+    <!--Make sure that you are constraining this Text to
+        the add Alarm FAB button-->
+
     <TextView
         android:id="@+id/textView36"
-        android:layout_width="371dp"
+        android:layout_width="350dp"
         android:layout_height="68dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="50dp"
         android:text="We will be introducing new exciting features such as lecture timetable, study planner, sppu notifications etc. Till then please stay tuned."
         android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/textView34"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintHorizontal_bias="0.523"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView35"
-        app:layout_constraintVertical_bias="0.063" />
+        app:layout_constraintVertical_bias="0.057" />
 
-    <!--Action name text for the add alarm button-->
-    <!--Make sure that you are constraining this Text to
-        the add Alarm FAB button-->
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/floatingActionButton2"
         android:layout_width="wrap_content"
@@ -88,10 +94,10 @@
         android:src="@android:drawable/stat_sys_phone_call"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.935"
+        app:layout_constraintHorizontal_bias="0.945"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView36"
-        app:layout_constraintVertical_bias="0.609" />
+        app:layout_constraintVertical_bias="0.816" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/dev_info_fab"
