@@ -18,6 +18,8 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.FirebaseDatabase;
 
+import static java.lang.Integer.valueOf;
+
 /**
  * A simple {@link Fragment} subclass.
  * Use the {@link menuHome#newInstance} factory method to
@@ -45,6 +47,7 @@ public class menuHome extends Fragment {
     private static TextView textView28;
     private static TextView textView29;
     private static TextView textView30;
+    public static int[] sum;
 
     // TODO: Rename and change types of parameters
     private String mParam1;
@@ -120,6 +123,7 @@ public class menuHome extends Fragment {
         textView28 = v.findViewById(R.id.textView28);
         textView29 = v.findViewById(R.id.textView29);
         textView30 = v.findViewById(R.id.textView30);
+        sum=new int[14];
 
         attendanceBt.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -142,9 +146,20 @@ public class menuHome extends Fragment {
                                 public void onComplete(@NonNull Task<DataSnapshot> task) {
                                     if (!task.isSuccessful()) {
                                         textView17.setText("0");
-                                    } else {
+                                    }
+
+                                    else {
                                         Log.d("firebase", String.valueOf(task.getResult().getValue()));
                                         textView17.setText(String.valueOf(task.getResult().getValue()));
+                                            try{textView17.setText(String.valueOf(task.getResult().getValue()));
+                                                sum[0]=valueOf((Integer) task.getResult().getValue());
+                                            }catch (Exception e){
+//                                                textView17.setText("0");
+                                                sum[0]=0;
+                                            }
+
+
+
                                     }
                                 }
                             });//1
@@ -156,6 +171,12 @@ public class menuHome extends Fragment {
                                     } else {
                                         Log.d("firebase", String.valueOf(task.getResult().getValue()));
                                         textView18.setText(String.valueOf(task.getResult().getValue()));
+                                        try{textView18.setText(String.valueOf(task.getResult().getValue()));
+                                            sum[1]=valueOf((Integer) task.getResult().getValue());
+                                        }catch (Exception e){
+//                                            textView18.setText("0");
+                                            sum[1]=0;
+                                        }
                                     }
                                 }
                             });//2
@@ -166,7 +187,13 @@ public class menuHome extends Fragment {
                                         textView19.setText("0");
                                     } else {
                                         Log.d("firebase", String.valueOf(task.getResult().getValue()));
-                                        textView19.setText(String.valueOf(task.getResult().getValue()));
+
+                                        try{textView19.setText(String.valueOf(task.getResult().getValue()));
+                                            sum[2]=valueOf((Integer) task.getResult().getValue());
+                                        }catch (Exception e){
+//                                            textView19.setText("0");
+                                            sum[2]=0;
+                                        }
                                     }
                                 }
                             });//3
@@ -177,7 +204,13 @@ public class menuHome extends Fragment {
                                         textView20.setText("0");
                                     } else {
                                         Log.d("firebase", String.valueOf(task.getResult().getValue()));
-                                        textView20.setText(String.valueOf(task.getResult().getValue()));
+
+                                        try{textView20.setText(String.valueOf(task.getResult().getValue()));
+                                            sum[3]=valueOf((Integer) task.getResult().getValue());
+                                        }catch (Exception e){
+//                                            textView20.setText("0");
+                                            sum[3]=0;
+                                        }
                                     }
                                 }
                             });//4
@@ -188,7 +221,13 @@ public class menuHome extends Fragment {
                                         textView21.setText("0");
                                     } else {
                                         Log.d("firebase", String.valueOf(task.getResult().getValue()));
-                                        textView21.setText(String.valueOf(task.getResult().getValue()));
+
+                                        try{textView21.setText(String.valueOf(task.getResult().getValue()));
+                                            sum[4]=valueOf((Integer) task.getResult().getValue());
+                                        }catch (Exception e){
+//                                            textView21.setText("0");
+                                            sum[4]=0;
+                                        }
                                     }
                                 }
                             });//5
@@ -199,7 +238,13 @@ public class menuHome extends Fragment {
                                         textView22.setText("0");
                                     } else {
                                         Log.d("firebase", String.valueOf(task.getResult().getValue()));
-                                        textView22.setText(String.valueOf(task.getResult().getValue()));
+
+                                        try{textView22.setText(String.valueOf(task.getResult().getValue()));
+                                            sum[5]=valueOf((Integer) task.getResult().getValue());
+                                        }catch (Exception e){
+//                                            textView22.setText("0");
+                                            sum[5]=0;
+                                        }
                                     }
                                 }
                             });//6
@@ -210,7 +255,13 @@ public class menuHome extends Fragment {
                                         textView23.setText("0");
                                     } else {
                                         Log.d("firebase", String.valueOf(task.getResult().getValue()));
-                                        textView23.setText(String.valueOf(task.getResult().getValue()));
+
+                                        try{textView23.setText(String.valueOf(task.getResult().getValue()));
+                                            sum[6]=valueOf((Integer) task.getResult().getValue());
+                                        }catch (Exception e){
+//                                            textView23.setText("0");
+                                            sum[6]=0;
+                                        }
                                     }
                                 }
                             });//7
@@ -221,7 +272,13 @@ public class menuHome extends Fragment {
                                         textView24.setText("0");
                                     } else {
                                         Log.d("firebase", String.valueOf(task.getResult().getValue()));
-                                        textView24.setText(String.valueOf(task.getResult().getValue()));
+
+                                        try{textView24.setText(String.valueOf(task.getResult().getValue()));
+                                            sum[7]=valueOf((Integer) task.getResult().getValue());
+                                        }catch (Exception e){
+//                                            textView24.setText("0");
+                                            sum[7]=0;
+                                        }
                                     }
                                 }
                             });//8
@@ -232,7 +289,13 @@ public class menuHome extends Fragment {
                                         textView25.setText("0");
                                     } else {
                                         Log.d("firebase", String.valueOf(task.getResult().getValue()));
-                                        textView25.setText(String.valueOf(task.getResult().getValue()));
+
+                                        try{textView25.setText(String.valueOf(task.getResult().getValue()));
+                                            sum[8]=valueOf((Integer) task.getResult().getValue());
+                                        }catch (Exception e){
+//                                            textView25.setText("0");
+                                            sum[8]=0;
+                                        }
                                     }
                                 }
                             });//9
@@ -243,7 +306,13 @@ public class menuHome extends Fragment {
                                         textView26.setText("0");
                                     } else {
                                         Log.d("firebase", String.valueOf(task.getResult().getValue()));
-                                        textView26.setText(String.valueOf(task.getResult().getValue()));
+
+                                        try{textView26.setText(String.valueOf(task.getResult().getValue()));
+                                            sum[9]=valueOf((Integer) task.getResult().getValue());
+                                        }catch (Exception e){
+//                                            textView26.setText("0");
+                                            sum[9]=0;
+                                        }
                                     }
                                 }
                             });//10
@@ -254,7 +323,13 @@ public class menuHome extends Fragment {
                                         textView27.setText("0");
                                     } else {
                                         Log.d("firebase", String.valueOf(task.getResult().getValue()));
-                                        textView27.setText(String.valueOf(task.getResult().getValue()));
+
+                                        try{textView27.setText(String.valueOf(task.getResult().getValue()));
+                                            sum[10]=valueOf((Integer) task.getResult().getValue());
+                                        }catch (Exception e){
+//                                            textView27.setText("0");
+                                            sum[10]=0;
+                                        }
                                     }
                                 }
                             });//11
@@ -265,7 +340,13 @@ public class menuHome extends Fragment {
                                         textView28.setText("0");
                                     } else {
                                         Log.d("firebase", String.valueOf(task.getResult().getValue()));
-                                        textView28.setText(String.valueOf(task.getResult().getValue()));
+
+                                        try{textView28.setText(String.valueOf(task.getResult().getValue()));
+                                            sum[11]=valueOf((Integer) task.getResult().getValue());
+                                        }catch (Exception e){
+//                                            textView28.setText("0");
+                                            sum[11]=0;
+                                        }
                                     }
                                 }
                             });//12
@@ -276,7 +357,13 @@ public class menuHome extends Fragment {
                                         textView29.setText("0");
                                     } else {
                                         Log.d("firebase", String.valueOf(task.getResult().getValue()));
-                                        textView29.setText(String.valueOf(task.getResult().getValue()));
+
+                                        try{textView29.setText(String.valueOf(task.getResult().getValue()));
+                                            sum[12]=valueOf((Integer) task.getResult().getValue());
+                                        }catch (Exception e){
+//                                            textView29.setText("0");
+                                            sum[12]=0;
+                                        }
                                     }
                                 }
                             });//13
@@ -287,10 +374,17 @@ public class menuHome extends Fragment {
                                         textView30.setText("0");
                                     } else {
                                         Log.d("firebase", String.valueOf(task.getResult().getValue()));
-                                        textView30.setText(String.valueOf(task.getResult().getValue()));
+
+                                        try{textView30.setText(String.valueOf(task.getResult().getValue()));
+                                            sum[13]=valueOf((Integer) task.getResult().getValue());
+                                        }catch (Exception e){
+//                                            textView30.setText("0");
+                                            sum[13]=0;
+                                        }
                                     }
                                 }
                             });//14
+
 
 
                         }

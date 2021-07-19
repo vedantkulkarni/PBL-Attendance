@@ -4,9 +4,20 @@ import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
+
+import androidx.annotation.NonNull;
+import androidx.fragment.app.Fragment;
+
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.FirebaseDatabase;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -19,6 +30,10 @@ public class profileFragment extends Fragment {
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
+    private FirebaseDatabase aDatabase = FirebaseDatabase.getInstance("https://attendanceapp-7ed22-default-rtdb.asia-southeast1.firebasedatabase.app/");
+    private static TextView profile_name ;
+    private static TextView profile_email ;
+    private static TextView attendance_text;
 
     // TODO: Rename and change types of parameters
     private String mParam1;
@@ -58,7 +73,53 @@ public class profileFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_profile, container, false);
+        View v =inflater.inflate(R.layout.fragment_profile, container, false);
+        profile_name=v.findViewById(R.id.nameView20);
+        profile_email=v.findViewById(R.id.emailright);
+        attendance_text=v.findViewById(R.id.rollno1right);
+        aDatabase = FirebaseDatabase.getInstance("https://attendanceapp-7ed22-default-rtdb.asia-southeast1.firebasedatabase.app/");
+        String currentuser = FirebaseAuth.getInstance().getCurrentUser().getUid();
+        aDatabase.getReference().child("Users").child(currentuser).child("username").get().addOnCompleteListener(new OnCompleteListener<DataSnapshot>() {
+            @Override
+            public void onComplete(@NonNull Task<DataSnapshot> task) {
+                if (!task.isSuccessful()) {
+                    Log.e("firebase", "Error getting data", task.getException());
+//                            Toast.makeText(menuHome.this , "failed to get value " , Toast.LENGTH_SHORT).show();
+                } else {
+                    profile_name.setText(String.valueOf(task.getResult().getValue()));
+                }
+            }
+        });
+        aDatabase.getReference().child("Users").child(currentuser).child("email").get().addOnCompleteListener(new OnCompleteListener<DataSnapshot>() {
+            @Override
+            public void onComplete(@NonNull Task<DataSnapshot> task) {
+                if (!task.isSuccessful()) {
+                    Log.e("firebase", "Error getting data", task.getException());
+//                            Toast.makeText(menuHome.this , "failed to get value " , Toast.LENGTH_SHORT).show();
+                } else {
+                    profile_email.setText(String.valueOf(task.getResult().getValue()));
+                }
+            }
+        });
+        double add=0;
+        for(int i=0;i<14;i++)
+        {
+            add+=menuHome.sum[i];
+        }
+        add=add/14;
+        aDatabase.getReference().child("Users").child(currentuser).child("attendance").setValue(add);
+
+        aDatabase.getReference().child("Users").child(currentuser).child("attendance").get().addOnCompleteListener(new OnCompleteListener<DataSnapshot>() {
+            @Override
+            public void onComplete(@NonNull Task<DataSnapshot> task) {
+                if (!task.isSuccessful()) {
+                    Log.e("firebase", "Error getting data", task.getException());
+//                            Toast.makeText(menuHome.this , "failed to get value " , Toast.LENGTH_SHORT).show();
+                } else {
+                    attendance_text.setText(String.valueOf(task.getResult().getValue()));
+                }
+            }
+        });
+        return v;
     }
 }

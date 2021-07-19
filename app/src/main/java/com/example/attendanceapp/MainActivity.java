@@ -48,29 +48,11 @@ public class MainActivity<_button> extends AppCompatActivity
     private FirebaseAuth mAuth;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-//        Toast.makeText(this, "Hellllo this is on create ", Toast.LENGTH_SHORT).show();
+
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
 
-//        getSupportFragmentManager().beginTransaction().replace(R.id.framecontainer,new HomeFragment()).commit();
-//        bnv=(BottomNavigationView)findViewById(R.id.bottomNavigation);
-//        bnv.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
-//            @Override
-//            public boolean onNavigationItemSelected(@NonNull MenuItem item)
-//            {
-//                Fragment temp=null;
-//                switch (item.getItemId())
-//                {
-//                    case R.id.homeid: temp= new HomeFragment();
-//                    break;
-//                    case R.id.profileid: temp= new profileFragment();
-//                    break;
-//                    case R.id.aboutid: temp= new aboutFragment();
-//                }
-//                getSupportFragmentManager().beginTransaction().replace(R.id.framecontainer,temp).commit();
-//                return true;
-//            }
-//        });
+
 
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         getSupportActionBar();
@@ -84,7 +66,7 @@ public class MainActivity<_button> extends AppCompatActivity
         bt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                Toast.makeText(MainActivity.this, "hello", Toast.LENGTH_SHORT).show();
+
                 mAuth.createUserWithEmailAndPassword(email.getText().toString() , password.getText().toString()).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
@@ -94,7 +76,7 @@ public class MainActivity<_button> extends AppCompatActivity
                             mDatabase=FirebaseDatabase.getInstance( "https://attendanceapp-7ed22-default-rtdb.asia-southeast1.firebasedatabase.app/");
                             String id= task.getResult().getUser().getUid();
 
-//                            mDatabase.child("Users").child(id).setValue(user);
+
                             mDatabase.getReference().child("Users").child(id).setValue(user);
 
                         }
