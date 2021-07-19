@@ -15,6 +15,7 @@ import android.widget.Toast;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.FirebaseDatabase;
@@ -39,6 +40,8 @@ public class Home extends AppCompatActivity {
     private TextView textView28;
     private TextView textView29;
     private TextView textView30;
+    private static FloatingActionButton floatingActionButton2 , dev_info_fab , teacher_fab ;
+    private static TextView dev , teacher;
 
     public Home() {
     }
@@ -64,6 +67,12 @@ public class Home extends AppCompatActivity {
         textView29=findViewById(R.id.textView29);
         textView30=findViewById(R.id.textView30);
         attendanceBt=findViewById(R.id.button3);
+        floatingActionButton2=findViewById(R.id.floatingActionButton2);
+        dev_info_fab=findViewById(R.id.dev_info_fab);
+        teacher_fab=findViewById(R.id.teacher_fab);
+        dev=findViewById(R.id.dev_info_text);
+        teacher=findViewById(R.id.teacher_text);
+
 
         bnv=(BottomNavigationView)findViewById(R.id.bottomNavigation);
         bnv.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -79,7 +88,7 @@ public class Home extends AppCompatActivity {
                         break;
                     case R.id.profileid: temp= new profileFragment();
                         break;
-                    case R.id.aboutid: temp= new aboutFragment();
+                    case R.id.aboutid: temp= new aboutFragment(floatingActionButton2,dev_info_fab,teacher_fab,dev ,teacher);
                 }
                 getSupportFragmentManager().beginTransaction().replace(R.id.framecontainer,temp).commit();
                 return true;
