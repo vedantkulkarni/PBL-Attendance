@@ -33,11 +33,11 @@
         android:layout_below="@id/textView33"
         android:background="@drawable/radius_button"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/person5"
-        app:layout_constraintHorizontal_bias="0.698"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.195"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.193" />
+        app:layout_constraintVertical_bias="0.192" />
 
     <ImageView
         android:id="@+id/person2"
