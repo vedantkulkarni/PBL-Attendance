@@ -9,13 +9,17 @@
     <!-- TODO: Update blank fragment layout -->
 
     <ImageView
+        android:id="@+id/profilelogo"
         android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:paddingTop="10dp"
-        android:paddingRight="20dp"
+        android:layout_height="159dp"
         android:layout_below="@id/uppertext"
-        android:src="@drawable/profileimg"
-        android:id="@+id/profilelogo"/>
+        android:layout_marginTop="24dp"
+        android:adjustViewBounds="true"
+        android:cropToPadding="false"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:src="@drawable/user" />
 
     <TextView
         android:layout_width="match_parent"
@@ -31,13 +35,14 @@
     <TextView
         android:id="@+id/nameView20"
         android:layout_width="match_parent"
-        android:layout_height="120dp"
-        android:gravity="center"
+        android:layout_height="86dp"
         android:layout_below="@id/profilelogo"
-        android:layout_marginTop="0dp"
-        android:text="Omkar prakash Kalamkar"
-        android:textColor="@color/black"
-        android:textSize="25dp"
+        android:layout_marginTop="33dp"
+        android:gravity="center"
+        android:text="10872"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#FDFDFD"
+        android:textSize="36sp"
         android:textStyle="bold" />
 
     <TextView
@@ -45,26 +50,29 @@
         android:layout_width="110dp"
         android:layout_height="50dp"
         android:layout_below="@id/nameView20"
-        android:text=" Email:"
-        android:padding="13dp"
-        android:textColor="@color/black"
-        android:textSize="17dp"
         android:layout_marginLeft="15dp"
-        android:gravity="center"
         android:layout_marginTop="60dp"
-        android:background="@drawable/lefttext"/>
+        android:background="@drawable/lefttext"
+        android:gravity="center"
+        android:padding="13dp"
+        android:text=" Email :"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@color/black"
+        android:textSize="17dp" />
+
     <TextView
         android:id="@+id/emailright"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_below="@id/nameView20"
-        android:text="omkarkalamkar20@gmail.com"
-        android:layout_toRightOf="@id/email"
-        android:textColor="@color/black"
-        android:textSize="17dp"
         android:layout_marginTop="60dp"
         android:layout_marginRight="15dp"
-        android:background="@drawable/righttext"/>
+        android:layout_toRightOf="@id/email"
+        android:background="@drawable/righttext"
+        android:gravity="center"
+        android:hint="Loading . . ."
+        android:textColor="@color/black"
+        android:textSize="17dp" />
 
     <TextView
         android:id="@+id/rollno1"
@@ -74,9 +82,10 @@
         android:layout_marginLeft="15dp"
         android:layout_marginTop="20dp"
         android:background="@drawable/lefttext"
-        android:padding="13dp"
-        android:text=" Roll No:"
         android:gravity="center"
+        android:padding="13dp"
+        android:text=" Attendance :"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textColor="@color/black"
         android:textSize="17dp" />
 
@@ -91,7 +100,7 @@
         android:layout_toRightOf="@id/rollno1"
         android:background="@drawable/righttext"
         android:gravity="center"
-        android:text="10864"
+        android:hint="Please click generate attendance in home page ."
         android:textColor="@color/black"
         android:textSize="17dp" />
 
