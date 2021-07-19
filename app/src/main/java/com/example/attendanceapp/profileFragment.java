@@ -145,17 +145,7 @@ public class profileFragment extends Fragment {
         attendance_text.setText(String.valueOf(add));
         aDatabase.getReference().child("Users").child(currentuser).child("attendance").setValue(add);
 
-        aDatabase.getReference().child("Users").child(currentuser).child("attendance").get().addOnCompleteListener(new OnCompleteListener<DataSnapshot>() {
-            @Override
-            public void onComplete(@NonNull Task<DataSnapshot> task) {
-                if (!task.isSuccessful()) {
-                    Log.e("firebase", "Error getting data", task.getException());
-//                            Toast.makeText(menuHome.this , "failed to get value " , Toast.LENGTH_SHORT).show();
-                } else {
-                    attendance_text.setText(String.valueOf(task.getResult().getValue()));
-                }
-            }
-        });
+
         return v;
     }
 }
