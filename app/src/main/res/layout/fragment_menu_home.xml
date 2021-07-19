@@ -79,6 +79,7 @@
                     android:layout_marginBottom="15dp"
                     android:layout_toRightOf="@id/textView16"
                     android:background="@drawable/rightblue"
+                    android:gravity="center"
                     android:textColor="@color/black" />
 
                 <TextView
@@ -104,6 +105,7 @@
                     android:layout_marginTop="15dp"
                     android:layout_toRightOf="@id/textView13"
                     android:background="@drawable/rightblue"
+                    android:gravity="center"
                     android:textColor="@color/black" />
 
                 <TextView
@@ -129,6 +131,7 @@
                     android:layout_marginTop="15dp"
                     android:layout_toRightOf="@id/textView12"
                     android:background="@drawable/rightblue"
+                    android:gravity="center"
                     android:textColor="@color/black" />
 
                 <TextView
@@ -154,6 +157,7 @@
                     android:layout_marginTop="15dp"
                     android:layout_toRightOf="@id/textView11"
                     android:background="@drawable/rightblue"
+                    android:gravity="center"
                     android:textColor="@color/black" />
 
                 <TextView

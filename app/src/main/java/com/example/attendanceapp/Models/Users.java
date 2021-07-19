@@ -16,7 +16,7 @@ public class Users {
         this.roll = roll;
         this.email = email;
         this.password = password;
-        this.attendance= 100.0;
+        this.attendance= 0.0;
 
     }
     public Users(){}
