@@ -1,16 +1,99 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".profileFragment">
+    tools:context=".profileFragment"
+    android:background="@drawable/userprofilebg">
 
     <!-- TODO: Update blank fragment layout -->
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:paddingTop="10dp"
+        android:paddingRight="20dp"
+        android:layout_below="@id/uppertext"
+        android:src="@drawable/profileimg"
+        android:id="@+id/profilelogo"/>
+
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="profile page"
-        android:textSize="40dp"
-        android:gravity="center" />
+        android:layout_height="wrap_content"
+        android:text="Profile Page"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:id="@+id/uppertext"
+        android:textSize="25dp"
+        android:background="@drawable/whiteupper"
+        android:textColor="@color/black"/>
 
-</FrameLayout>
+    <TextView
+        android:id="@+id/nameView20"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:gravity="center"
+        android:layout_below="@id/profilelogo"
+        android:layout_marginTop="0dp"
+        android:text="Omkar prakash Kalamkar"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/nameView20"
+        android:text=" Email:"
+        android:padding="13dp"
+        android:textColor="@color/black"
+        android:textSize="17dp"
+        android:layout_marginLeft="15dp"
+        android:gravity="center"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/lefttext"/>
+    <TextView
+        android:id="@+id/emailright"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/nameView20"
+        android:text="omkarkalamkar20@gmail.com"
+        android:layout_toRightOf="@id/email"
+        android:textColor="@color/black"
+        android:textSize="17dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/righttext"/>
+
+    <TextView
+        android:id="@+id/rollno1"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/email"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/lefttext"
+        android:padding="13dp"
+        android:text=" Roll No:"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="17dp" />
+
+    <TextView
+        android:id="@+id/rollno1right"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/emailright"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="15dp"
+        android:layout_toRightOf="@id/rollno1"
+        android:background="@drawable/righttext"
+        android:gravity="center"
+        android:text="10864"
+        android:textColor="@color/black"
+        android:textSize="17dp" />
+
+
+</RelativeLayout>
