@@ -131,7 +131,7 @@ public class menuHome extends Fragment {
                 aDatabase = FirebaseDatabase.getInstance("https://attendanceapp-7ed22-default-rtdb.asia-southeast1.firebasedatabase.app/");
                 String currentuser = FirebaseAuth.getInstance().getCurrentUser().getUid();
 //               aDatabase=FirebaseDatabase.getInstance().getReference();
-                aDatabase.getReference().child("Users").child(currentuser).child("username").get().addOnCompleteListener(new OnCompleteListener<DataSnapshot>() {
+                aDatabase.getReference().child("Users").child(currentuser).child("roll").get().addOnCompleteListener(new OnCompleteListener<DataSnapshot>() {
                     @Override
                     public void onComplete(@NonNull Task<DataSnapshot> task) {
                         if (!task.isSuccessful()) {
@@ -145,7 +145,7 @@ public class menuHome extends Fragment {
                                 @Override
                                 public void onComplete(@NonNull Task<DataSnapshot> task) {
                                     if (!task.isSuccessful()) {
-                                        textView17.setText("0");
+                                        textView17.setText("0");//not coming here
                                     }
 
                                     else {
@@ -156,7 +156,7 @@ public class menuHome extends Fragment {
                                                 String s=String.valueOf(task.getResult().getValue());
                                                 sum[0]=Integer.parseInt(s);
                                             }catch (Exception e){
-                                                textView17.setText("0");
+                                                textView17.setText("3");
                                                 sum[0]=0;
                                             }
 

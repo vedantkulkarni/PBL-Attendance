@@ -65,7 +65,7 @@
                     android:background="@drawable/leftblue"
                     android:gravity="center"
                     android:paddingLeft="12dp"
-                    android:text="EM2"
+                    android:text="PHY"
                     android:textColor="@color/black"
                     android:textSize="18sp" />
 
@@ -92,7 +92,7 @@
                     android:background="@drawable/leftblue"
                     android:gravity="center"
                     android:paddingLeft="12dp"
-                    android:text="EM LAB"
+                    android:text="EM 2"
                     android:textColor="@color/black"
                     android:textSize="18sp" />
 
@@ -118,7 +118,7 @@
                     android:background="@drawable/leftblue"
                     android:gravity="center"
                     android:paddingLeft="8dp"
-                    android:text="PHY LAB"
+                    android:text="EM LAB"
                     android:textColor="@color/black"
                     android:textSize="18sp" />
 
@@ -144,7 +144,7 @@
                     android:background="@drawable/leftblue"
                     android:gravity="center"
                     android:paddingLeft="12dp"
-                    android:text="BEE LAB"
+                    android:text="PHY LAB"
                     android:textColor="@color/black"
                     android:textSize="18sp" />
 
@@ -170,7 +170,7 @@
                     android:background="@drawable/leftblue"
                     android:gravity="center"
                     android:paddingLeft="12dp"
-                    android:text="EVS"
+                    android:text="BEE LAB"
                     android:textColor="@color/black"
                     android:textSize="18sp" />
 
@@ -196,7 +196,7 @@
                     android:background="@drawable/leftblue"
                     android:gravity="center"
                     android:paddingLeft="12dp"
-                    android:text="PBL LAB"
+                    android:text="ES 2"
                     android:textColor="@color/black"
                     android:textSize="18sp" />
 
@@ -222,7 +222,7 @@
                     android:background="@drawable/leftblue"
                     android:gravity="center"
                     android:paddingLeft="12dp"
-                    android:text="EG"
+                    android:text="PBL LAB"
                     android:textColor="@color/black"
                     android:textSize="18sp" />
 
@@ -249,7 +249,7 @@
                     android:background="@drawable/leftblue"
                     android:gravity="center"
                     android:paddingLeft="12dp"
-                    android:text="EG LAB"
+                    android:text="EG"
                     android:textColor="@color/black"
                     android:textSize="18sp" />
 
@@ -275,7 +275,7 @@
                     android:background="@drawable/leftblue"
                     android:gravity="center"
                     android:paddingLeft="12dp"
-                    android:text="EM 2 TUT"
+                    android:text="EG LAB"
                     android:textColor="@color/black"
                     android:textSize="18sp" />
 
@@ -301,7 +301,7 @@
                     android:background="@drawable/leftblue"
                     android:gravity="center"
                     android:paddingLeft="12dp"
-                    android:text="PE"
+                    android:text="EG TUT"
                     android:textColor="@color/black"
                     android:textSize="18sp" />
 
@@ -327,7 +327,7 @@
                     android:background="@drawable/leftblue"
                     android:gravity="center"
                     android:paddingLeft="12dp"
-                    android:text="EG TUT"
+                    android:text="EM2 TUT"
                     android:textColor="@color/black"
                     android:textSize="18sp" />
 
@@ -353,7 +353,7 @@
                     android:background="@drawable/leftblue"
                     android:gravity="center"
                     android:paddingLeft="12dp"
-                    android:text="PHY"
+                    android:text="EM"
                     android:textColor="@color/black"
                     android:textSize="18sp" />
 
@@ -378,7 +378,7 @@
                     android:background="@drawable/leftblue"
                     android:gravity="center"
                     android:paddingLeft="12dp"
-                    android:text="EM"
+                    android:text="BEE"
                     android:textColor="@color/black"
                     android:textSize="18sp" />
 
@@ -405,7 +405,7 @@
                     android:background="@drawable/leftblue"
                     android:gravity="center"
                     android:paddingLeft="12dp"
-                    android:text="BEE"
+                    android:text="PE"
                     android:textColor="@color/black"
                     android:textSize="18sp" />
 
