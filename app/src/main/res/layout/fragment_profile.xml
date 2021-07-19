@@ -84,7 +84,7 @@
         android:background="@drawable/lefttext"
         android:gravity="center"
         android:padding="13dp"
-        android:text=" Attendance :"
+        android:text="Attendance :"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textColor="@color/black"
         android:textSize="17dp" />
