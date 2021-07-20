@@ -13,152 +13,305 @@
         android:id="@+id/textView39"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:text="@string/hello_blank_fragment"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
 
-    <ImageView
-        android:id="@+id/person2"
-        android:layout_width="170dp"
-        android:layout_height="218dp"
-        android:layout_below="@id/textView39"
-        android:background="@drawable/radius_button"
+    <TextView
+        android:id="@+id/textView33"
+        android:layout_width="413dp"
+        android:layout_height="49dp"
+        android:background="@drawable/upperyello"
+        android:gravity="center"
+        android:text="TEACHERS"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.933"
+        app:layout_constraintHorizontal_bias="0.555"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/textView39"
-        app:layout_constraintVertical_bias="0.031" />
-
-    <ImageView
-        android:id="@+id/person3"
-        android:layout_width="170dp"
-        android:layout_height="218dp"
-        android:layout_below="@id/textView39"
-        android:background="@drawable/radius_button"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+    <TextView
+        android:id="@+id/textView37"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Version 1.0"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.933"
+        app:layout_constraintHorizontal_bias="0.488"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/textView39"
-        app:layout_constraintVertical_bias="0.968" />
+        app:layout_constraintTop_toTopOf="@+id/textView33"
+        app:layout_constraintVertical_bias="0.957" />
 
     <ImageView
-        android:id="@+id/person4"
-        android:layout_width="170dp"
-        android:layout_height="218dp"
-        android:layout_below="@id/textView39"
-        android:background="@drawable/radius_button"
+        android:id="@+id/imageView4"
+        android:layout_width="136dp"
+        android:layout_height="126dp"
+        android:src="@drawable/female"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.116"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/textView39"
-        app:layout_constraintVertical_bias="0.499" />
+        app:layout_constraintTop_toBottomOf="@+id/textView33"
+        app:layout_constraintVertical_bias="0.057" />
 
-    <ImageView
-        android:id="@+id/person5"
-        android:layout_width="170dp"
-        android:layout_height="218dp"
-        android:layout_below="@id/textView39"
-        android:background="@drawable/radius_button"
+    <TextView
+        android:id="@+id/textView63"
+        android:layout_width="122dp"
+        android:layout_height="21dp"
+        android:text="NAVNATH GADADE"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintBottom_toBottomOf="@+id/textView39"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.117"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:layout_constraintVertical_bias="0.095" />
+
+    <TextView
+        android:id="@+id/textView64"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SUMIT BAGADE"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.933"
+        app:layout_constraintHorizontal_bias="0.108"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/textView39"
-        app:layout_constraintVertical_bias="0.499" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:layout_constraintVertical_bias="0.255" />
 
-    <ImageView
-        android:id="@+id/person6"
-        android:layout_width="170dp"
-        android:layout_height="218dp"
-        android:layout_below="@id/textView39"
-        android:background="@drawable/radius_button"
+    <TextView
+        android:id="@+id/textView65"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SUJATA BARDE"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintBottom_toBottomOf="@+id/textView39"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.108"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:layout_constraintVertical_bias="0.417" />
+
+    <TextView
+        android:id="@+id/textView66"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="KAUSTUBH KULKARNI"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintBottom_toBottomOf="@+id/textView39"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.125"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:layout_constraintVertical_bias="0.566" />
+
+    <TextView
+        android:id="@+id/textView67"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AVINASH DESHMUKH"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintBottom_toBottomOf="@+id/textView39"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.124"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:layout_constraintVertical_bias="0.697" />
+
+    <TextView
+        android:id="@+id/textView68"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ENGG . MATHEMATICS 2"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView39"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.042"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:layout_constraintVertical_bias="0.048" />
+
+    <TextView
+        android:id="@+id/textView69"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BASIC ELECTRICAL ENGG."
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.116"
+        app:layout_constraintHorizontal_bias="0.045"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/textView39"
-        app:layout_constraintVertical_bias="0.968" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:layout_constraintVertical_bias="0.21" />
 
-    <ImageView
-        android:id="@+id/person7"
-        android:layout_width="170dp"
-        android:layout_height="218dp"
-        android:layout_below="@id/textView39"
-        android:background="@drawable/radius_button"
+    <TextView
+        android:id="@+id/textView70"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ENGG . MECHANICS"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.116"
+        app:layout_constraintHorizontal_bias="0.036"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/textView39"
-        app:layout_constraintVertical_bias="0.031" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:layout_constraintVertical_bias="0.374" />
 
     <TextView
-        android:id="@+id/textView31"
-        android:layout_width="129dp"
-        android:layout_height="179dp"
-        android:text="Sharadchandra Tukaram Gawhale                                                stgawhale@gmail.com	                                  9226744094 "
-        app:layout_constraintBottom_toBottomOf="@+id/person7"
-        app:layout_constraintEnd_toEndOf="@+id/person7"
-        app:layout_constraintHorizontal_bias="0.536"
-        app:layout_constraintStart_toStartOf="@+id/person7"
-        app:layout_constraintTop_toTopOf="@+id/person7" />
+        android:id="@+id/textView71"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ENGG . PHYSICS"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView39"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.032"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:layout_constraintVertical_bias="0.524" />
 
     <TextView
-        android:id="@+id/textView38"
-        android:layout_width="131dp"
-        android:layout_height="184dp"
-        android:text="SUJATA ASHOKRAO BARDE   abarde@pict.edu	020-24372041 Ext. 557"
-        app:layout_constraintBottom_toBottomOf="@+id/person2"
-        app:layout_constraintEnd_toEndOf="@+id/person2"
-        app:layout_constraintStart_toStartOf="@+id/person2"
-        app:layout_constraintTop_toTopOf="@+id/person2" />
+        android:id="@+id/textView72"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ENGG . GRAPHICS"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView39"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.034"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:layout_constraintVertical_bias="0.656" />
 
     <TextView
-        android:id="@+id/textView40"
-        android:layout_width="126dp"
-        android:layout_height="175dp"
-        android:text="Dr. Avinash Madhukarrao Deshmukh  amdeshmukh@pict.edu    020-24372041 Ext: 551"
-        app:layout_constraintBottom_toBottomOf="@+id/person4"
-        app:layout_constraintEnd_toEndOf="@+id/person4"
-        app:layout_constraintStart_toStartOf="@+id/person4"
-        app:layout_constraintTop_toTopOf="@+id/person4" />
+        android:id="@+id/textView73"
+        android:layout_width="173dp"
+        android:layout_height="21dp"
+        android:text="Email : nagadade@pict.edu"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintBottom_toBottomOf="@+id/textView39"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.848"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:layout_constraintVertical_bias="0.095" />
 
     <TextView
-        android:id="@+id/textView41"
-        android:layout_width="123dp"
-        android:layout_height="184dp"
-        android:text="HOD sir  Emani Maheswara Reddy  emreddy@pict.edu 020-24372041 Ext: 500 "
-        app:layout_constraintBottom_toBottomOf="@+id/person5"
-        app:layout_constraintEnd_toEndOf="@+id/person5"
-        app:layout_constraintStart_toStartOf="@+id/person5"
-        app:layout_constraintTop_toTopOf="@+id/person5" />
+        android:id="@+id/textView74"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contact : 020-24371101"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.776"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:layout_constraintVertical_bias="0.136" />
 
     <TextView
-        android:id="@+id/textView42"
-        android:layout_width="124dp"
-        android:layout_height="182dp"
-        android:text="Navnath Ankush Gadade   nagadade@pict.edu	020-24371101 Ext.531"
-        app:layout_constraintBottom_toBottomOf="@+id/person6"
-        app:layout_constraintEnd_toEndOf="@+id/person6"
-        app:layout_constraintStart_toStartOf="@+id/person6"
-        app:layout_constraintTop_toTopOf="@+id/person6" />
+        android:id="@+id/textView75"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contact : +91 7972594423"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintBottom_toBottomOf="@+id/textView39"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.828"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:layout_constraintVertical_bias="0.293" />
 
     <TextView
-        android:id="@+id/textView43"
-        android:layout_width="126dp"
-        android:layout_height="193dp"
-        android:text="TextView"
-        app:layout_constraintBottom_toBottomOf="@+id/person3"
-        app:layout_constraintEnd_toEndOf="@+id/person3"
-        app:layout_constraintStart_toStartOf="@+id/person3"
-        app:layout_constraintTop_toTopOf="@+id/person3" />
+        android:id="@+id/textView76"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email : subagade@pict.edu"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintBottom_toBottomOf="@+id/textView39"
+        app:layout_constraintEnd_toEndOf="@+id/textView39"
+        app:layout_constraintHorizontal_bias="0.838"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:layout_constraintVertical_bias="0.255" />
+
+    <TextView
+        android:id="@+id/textView77"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email : sabarde@pict.edu"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintBottom_toBottomOf="@+id/textView39"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.801"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:layout_constraintVertical_bias="0.417" />
+
+    <TextView
+        android:id="@+id/textView78"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contact : 020-24372041"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintBottom_toBottomOf="@+id/textView39"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.776"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:layout_constraintVertical_bias="0.455" />
+
+    <TextView
+        android:id="@+id/textView79"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contact : +91 9527800217"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintBottom_toBottomOf="@+id/textView39"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.824"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:layout_constraintVertical_bias="0.566" />
+
+    <TextView
+        android:id="@+id/textView81"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email : amdeshmukh@pict.edu"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintBottom_toBottomOf="@+id/textView39"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.926"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:layout_constraintVertical_bias="0.697" />
+
+    <TextView
+        android:id="@+id/textView82"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contact : 020-24372041"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.776"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:layout_constraintVertical_bias="0.734" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
