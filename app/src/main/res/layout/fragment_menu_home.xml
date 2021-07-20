@@ -183,6 +183,7 @@
                     android:layout_marginTop="15dp"
                     android:layout_toRightOf="@id/textView10"
                     android:background="@drawable/rightblue"
+                    android:gravity="center"
                     android:textColor="@color/black" />
 
                 <TextView
@@ -208,6 +209,7 @@
                     android:layout_marginTop="15dp"
                     android:layout_toRightOf="@id/textView9"
                     android:background="@drawable/rightblue"
+                    android:gravity="center"
                     android:textColor="@color/black" />
 
                 <TextView
@@ -234,6 +236,7 @@
                     android:layout_marginTop="15dp"
                     android:layout_toRightOf="@id/textView15"
                     android:background="@drawable/rightblue"
+                    android:gravity="center"
                     android:textColor="@color/black" />
 
                 <TextView
@@ -259,6 +262,7 @@
                     android:layout_marginTop="15dp"
                     android:layout_toRightOf="@id/textView8"
                     android:background="@drawable/rightblue"
+                    android:gravity="center"
                     android:textColor="@color/black" />
 
                 <TextView
@@ -284,6 +288,7 @@
                     android:layout_marginTop="15dp"
                     android:layout_toRightOf="@id/textView7"
                     android:background="@drawable/rightblue"
+                    android:gravity="center"
                     android:textColor="@color/black" />
 
                 <TextView
@@ -309,6 +314,7 @@
                     android:layout_marginTop="15dp"
                     android:layout_toRightOf="@id/textView6"
                     android:background="@drawable/rightblue"
+                    android:gravity="center"
                     android:textColor="@color/black" />
 
                 <TextView
@@ -334,6 +340,7 @@
                     android:layout_marginTop="15dp"
                     android:layout_toRightOf="@id/textView4"
                     android:background="@drawable/rightblue"
+                    android:gravity="center"
                     android:textColor="@color/black" />
 
                 <TextView
@@ -359,6 +366,7 @@
                     android:layout_marginTop="15dp"
                     android:layout_toRightOf="@id/textView3"
                     android:background="@drawable/rightblue"
+                    android:gravity="center"
                     android:textColor="@color/black" />
 
                 <TextView
@@ -383,6 +391,7 @@
                     android:layout_marginTop="15dp"
                     android:layout_toRightOf="@id/textView5"
                     android:background="@drawable/rightblue"
+                    android:gravity="center"
                     android:textColor="@color/black" />
 
                 <TextView
@@ -408,6 +417,7 @@
                     android:layout_marginTop="15dp"
                     android:layout_toRightOf="@id/textView14"
                     android:background="@drawable/rightblue"
+                    android:gravity="center"
                     android:textColor="@color/black" />
 
 
