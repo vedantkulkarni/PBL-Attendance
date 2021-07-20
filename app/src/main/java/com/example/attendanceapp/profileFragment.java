@@ -111,7 +111,7 @@ public class profileFragment extends Fragment {
         textView30 = v.findViewById(R.id.textView30);
         aDatabase = FirebaseDatabase.getInstance("https://attendanceapp-7ed22-default-rtdb.asia-southeast1.firebasedatabase.app/");
         String currentuser = FirebaseAuth.getInstance().getCurrentUser().getUid();
-        aDatabase.getReference().child("Users").child(currentuser).child("username").get().addOnCompleteListener(new OnCompleteListener<DataSnapshot>() {
+        aDatabase.getReference().child("Users").child(currentuser).child("roll").get().addOnCompleteListener(new OnCompleteListener<DataSnapshot>() {
             @Override
             public void onComplete(@NonNull Task<DataSnapshot> task) {
                 if (!task.isSuccessful()) {
