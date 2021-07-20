@@ -22,9 +22,10 @@
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.004" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
         android:id="@+id/person1"
@@ -33,11 +34,11 @@
         android:layout_below="@id/textView33"
         android:background="@drawable/radius_button"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/person5"
-        app:layout_constraintHorizontal_bias="0.698"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.182"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.193" />
+        app:layout_constraintVertical_bias="0.092" />
 
     <ImageView
         android:id="@+id/person2"
@@ -47,10 +48,10 @@
         android:background="@drawable/radius_button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.533"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView33"
-        app:layout_constraintVertical_bias="0.528" />
+        app:layout_constraintTop_toTopOf="@+id/textView33"
+        app:layout_constraintVertical_bias="0.497" />
+
 
     <ImageView
         android:id="@+id/person3"
@@ -61,10 +62,10 @@
         android:background="@drawable/radius_button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.815"
+        app:layout_constraintHorizontal_bias="0.814"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.937" />
+        app:layout_constraintVertical_bias="0.907" />
 
     <ImageView
         android:id="@+id/person4"
@@ -74,10 +75,10 @@
         android:background="@drawable/radius_button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.268"
+        app:layout_constraintHorizontal_bias="0.182"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.936" />
+        app:layout_constraintVertical_bias="0.907" />
 
     <ImageView
         android:id="@+id/person5"
@@ -85,12 +86,94 @@
         android:layout_height="170dp"
         android:layout_below="@id/person3"
         android:background="@drawable/radius_button"
-        app:layout_constraintBottom_toTopOf="@+id/person3"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.815"
+        app:layout_constraintHorizontal_bias="0.814"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.28" />
+        app:layout_constraintVertical_bias="0.092" />
+
+    <TextView
+        android:id="@+id/omkar"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="OMKAR  KALAMKAR"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/person5"
+        app:layout_constraintEnd_toEndOf="@+id/person5"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="@+id/person5"
+        app:layout_constraintTop_toTopOf="@+id/person5"
+        app:layout_constraintVertical_bias="0.244" />
+
+    <TextView
+        android:id="@+id/vedant"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="VEDANT KULKARNI"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/person2"
+        app:layout_constraintEnd_toEndOf="@+id/person2"
+        app:layout_constraintStart_toStartOf="@+id/person2"
+        app:layout_constraintTop_toTopOf="@+id/person2"
+        app:layout_constraintVertical_bias="0.222" />
+
+    <TextView
+        android:id="@+id/harsh"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="HARSH BHOSKAR"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/person1"
+        app:layout_constraintEnd_toEndOf="@+id/person1"
+        app:layout_constraintStart_toStartOf="@+id/person1"
+        app:layout_constraintTop_toTopOf="@+id/person1"
+        app:layout_constraintVertical_bias="0.244" />
+
+    <TextView
+        android:id="@+id/shubham"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="SHUBHAM PATIL"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/person3"
+        app:layout_constraintEnd_toEndOf="@+id/person3"
+        app:layout_constraintHorizontal_bias="0.433"
+        app:layout_constraintStart_toStartOf="@+id/person3"
+        app:layout_constraintTop_toTopOf="@+id/person3"
+        app:layout_constraintVertical_bias="0.229" />
+
+    <TextView
+        android:id="@+id/Yash"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="YASH BAGADE"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/person4"
+        app:layout_constraintEnd_toEndOf="@+id/person4"
+        app:layout_constraintHorizontal_bias="0.366"
+        app:layout_constraintStart_toStartOf="@+id/person4"
+        app:layout_constraintTop_toTopOf="@+id/person4"
+        app:layout_constraintVertical_bias="0.198" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_email_logo"
+        app:layout_constraintBottom_toBottomOf="@+id/person1"
+        app:layout_constraintEnd_toEndOf="@+id/person1"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="@+id/person1"
+        app:layout_constraintTop_toTopOf="@+id/person1"
+        app:layout_constraintVertical_bias="0.907" />
+
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
