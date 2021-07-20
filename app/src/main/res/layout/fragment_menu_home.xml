@@ -39,7 +39,8 @@
             android:layout_marginTop="20dp"
             android:background="@drawable/radius_button"
             android:gravity="center"
-            android:text="GENERATE ATTENDANCE" />
+            android:text="GENERATE ATTENDANCE"
+            android:textColor="@color/black" />
 
         <ScrollView
             android:id="@+id/scrollview1"
