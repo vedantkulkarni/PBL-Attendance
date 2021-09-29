@@ -26,7 +26,7 @@
 - [Contributing](#contributing)
   - [Creating A Pull Request](#creating-a-pull-request)
 - [Authors](#authors)
-- [Connect With Me]("connect-with-me")
+- [Connect With Me]("#connect-with-me")
 - [Fellow Contributors](#fellow-contributors)
   
 
