@@ -61,9 +61,9 @@ This App can be used by college students to check and keep track of their Attend
 
 ## Screenshots
 
-<img src="https://user-images.githubusercontent.com/24658039/135245219-605ae22d-430a-4ebd-8964-e34159945e72.PNG" align="center" alt="Logo" width="1200" height="475">
+<img src="https://user-images.githubusercontent.com/24658039/135245219-605ae22d-430a-4ebd-8964-e34159945e72.PNG" align="center" alt="Logo" width="1200" height="540">
 <br/>
-<img src="https://user-images.githubusercontent.com/24658039/135245231-f8b15fdf-7376-400f-8583-512ca14a8bc5.PNG" align="center" alt="Logo" width="1200" height="475">
+<img src="https://user-images.githubusercontent.com/24658039/135245231-f8b15fdf-7376-400f-8583-512ca14a8bc5.PNG" align="center" alt="Logo" width="1200" height="540">
 
 
 ## Contributing
