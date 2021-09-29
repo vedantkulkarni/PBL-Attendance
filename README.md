@@ -61,9 +61,9 @@ This App can be used by college students to check and keep track of their Attend
 
 ## Screenshots
 
-<img src="https://user-images.githubusercontent.com/24658039/135245219-605ae22d-430a-4ebd-8964-e34159945e72.PNG" align="center" alt="Logo" width="1200" height="540">
+<img src="https://user-images.githubusercontent.com/24658039/135245219-605ae22d-430a-4ebd-8964-e34159945e72.PNG" align="center" alt="Logo" width="1200" height="560">
 <br/>
-<img src="https://user-images.githubusercontent.com/24658039/135245231-f8b15fdf-7376-400f-8583-512ca14a8bc5.PNG" align="center" alt="Logo" width="1200" height="540">
+<img src="https://user-images.githubusercontent.com/24658039/135245231-f8b15fdf-7376-400f-8583-512ca14a8bc5.PNG" align="center" alt="Logo" width="1200" height="560">
 
 
 ## Contributing
@@ -87,6 +87,12 @@ Contributions are what make the open source community such an amazing place to b
 ## Authors
 
 * **Vedant Kulkarni** - *Information Technology Student* - [Vedant Kulkarni](https://github.com/vedantkulkarni) 
+
+
+## Connect with me:
+<a href = "https://www.linkedin.com/in/vedant-kulkarni-951770207/"><img src="https://cdn-icons-png.flaticon.com/512/124/124011.png" hspace="15" width="40" height="40"/></a>
+<a href = "https://www.instagram.com/_vedant__kulkarni_/"><img src="https://cdn-icons-png.flaticon.com/512/355/355975.png" width="42" height="42"/></a>
+
 
 ## Fellow Contributors
 
